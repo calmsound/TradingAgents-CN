@@ -343,11 +343,46 @@ DEFAULT_MODEL_CAPABILITIES: Dict[str, Dict[str, Any]] = {
         "capability_level": 4,
         "suitable_roles": [ModelRole.DEEP_ANALYSIS],
         "features": [ModelFeature.TOOL_CALLING, ModelFeature.LONG_CONTEXT, ModelFeature.REASONING],
-        "recommended_depths": ["标准", "深度", "全面"],
+        "recommended_depths": ["標準", "深度", "全面"],
         "performance_metrics": {"speed": 2, "cost": 2, "quality": 5},
-        "description": "Moonshot V1 128K，超长上下文旗舰"
+        "description": "Moonshot V1 128K，超長上下文旗艦"
     },
-}
+
+    # ==================== MiniMax ====================
+    "abab6.5s-chat": {
+        "capability_level": 2,
+        "suitable_roles": [ModelRole.QUICK_ANALYSIS],
+        "features": [ModelFeature.TOOL_CALLING, ModelFeature.FAST_RESPONSE, ModelFeature.COST_EFFECTIVE],
+        "recommended_depths": ["快速", "基礎", "標準"],
+        "performance_metrics": {"speed": 5, "cost": 5, "quality": 3},
+        "description": "MiniMax abab6.5s，快速響應且經濟"
+    },
+    "abab6.5t-chat": {
+        "capability_level": 2,
+        "suitable_roles": [ModelRole.QUICK_ANALYSIS],
+        "features": [ModelFeature.TOOL_CALLING, ModelFeature.FAST_RESPONSE],
+        "recommended_depths": ["快速", "基礎", "標準"],
+        "performance_metrics": {"speed": 5, "cost": 4, "quality": 3},
+        "description": "MiniMax abab6.5t，高效率版本"
+    },
+    "abab6.5-chat": {
+        "capability_level": 4,
+        "suitable_roles": [ModelRole.BOTH],
+        "features": [ModelFeature.TOOL_CALLING, ModelFeature.REASONING],
+        "recommended_depths": ["標準", "深度", "全面"],
+        "performance_metrics": {"speed": 3, "cost": 2, "quality": 5},
+        "description": "MiniMax abab6.5，強大推理能力"
+    },
+    "abab7-chat": {
+        "capability_level": 5,
+        "suitable_roles": [ModelRole.DEEP_ANALYSIS],
+        "features": [ModelFeature.TOOL_CALLING, ModelFeature.REASONING, ModelFeature.LONG_CONTEXT],
+        "recommended_depths": ["深度", "全面"],
+        "performance_metrics": {"speed": 2, "cost": 1, "quality": 5},
+        "description": "MiniMax abab7，新一代旗艦模型"
+    },
+    }
+
 
 
 def get_model_capability_badge(level: int) -> Dict[str, str]:

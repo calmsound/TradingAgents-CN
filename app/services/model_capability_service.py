@@ -54,7 +54,8 @@ class ModelCapabilityService:
                     "zhipu": "glm",
                     "glm": "glm",
                     "baidu": "baidu",
-                    "moonshot": "moonshot"
+                    "moonshot": "moonshot",
+                    "minimax": "minimax"
                 }
 
                 provider = provider_map.get(provider_hint)

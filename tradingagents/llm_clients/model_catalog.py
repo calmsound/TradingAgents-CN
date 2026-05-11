@@ -129,6 +129,18 @@ MODEL_OPTIONS: ProviderModeOptions = {
             ("Custom model ID", "custom"),
         ],
     },
+    "minimax": {
+        "quick": [
+            ("MiniMax abab6.5s - Fast", "abab6.5s-chat"),
+            ("MiniMax abab6.5t - Efficient", "abab6.5t-chat"),
+            ("Custom model ID", "custom"),
+        ],
+        "deep": [
+            ("MiniMax abab6.5 - Strong", "abab6.5-chat"),
+            ("MiniMax abab7 - Flagship", "abab7-chat"),
+            ("Custom model ID", "custom"),
+        ],
+    },
 }
 
 
